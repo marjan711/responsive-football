@@ -1,0 +1,261 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------- nav-menu-------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    background-color: #2D25A0;
+}
+
+.nav-item ul{
+    display: flex;
+    margin-left: 90px;
+}
+
+.nav-item ul li{
+    list-style: none;
+}
+
+.nav-item ul li a:hover{
+    color: #E02C6D;
+}
+
+.nav-item ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 26px;
+    color: #ffffff;
+}
+
+.nav-item ul li a:hover{
+    color: #E02C6D;
+}
+.nav-login{
+    margin-right: 130px;
+}
+
+.btn-login{
+    background-color: #E02C6D;
+    border: none;
+    color: #ffffff;
+    padding: 13px 20px;
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 650px;
+    background-color: #2D25A0;
+    position: relative;
+}
+
+/* banner style */
+
+.banner-title{
+    width: 485px;
+    height: 230px;
+    position: absolute;
+    line-height: 80px;
+    left: 130px;
+    top: 150px;
+}
+
+.banner-title h1{
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.banner-thumbnail{
+    position: absolute;
+    right: 100px;
+    left: 700px;
+    top: 153px;
+}
+
+.banner-thumbnail img{
+    width:556.01px;
+    height:438px;
+}
+
+
+.banner-thumbnail:hover{
+    transform: scale(1.3);
+    transition: transform 1s ease-in;
+}
+
+
+.btn-watch-live{
+    background-color: #E02C6D;
+    padding: 14px 24px;
+    border: none;
+}
+
+.btn-watch-live a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right:5px;
+}
+
+.white-arrow{
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+/*---------- banner end here -------------*/
+
+
+
+/* ---------------------players profile start--------------- */
+
+.players-gallery{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 50px 210px;
+}
+
+.player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img{
+    width:90%;
+    
+    padding: 20px;
+}
+
+.player h2{
+    margin-top: 0;
+    padding: 0px 20px;
+}
+
+.player p{
+    margin-top: 0;
+    padding: 0px 20px;
+}
+
+/* ---------------------players profile end--------------- */
+
+/* highlight start here */
+
+.highlight{
+    display:flex;
+    width: 1102px;
+    margin: auto;
+}
+
+.highlight-info{
+    width: 469px;
+    margin-top:50px;
+}
+
+.highlight-info h1{
+    font-size: 48px
+}
+.highlight-info p{
+    font-size: 16px;
+    
+}
+
+.highlight-image{
+   padding-left:66px;
+}
+.highlight-image img{
+    width:567px;
+}
+
+/* highlight start here */
+
+
+/* ------------------footer------------ */
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 158px;
+}
+
+.footer-content img{
+    width: 40%;
+    padding-left: 295px;
+}
+footer p{
+    text-align: center;
+    margin-top: 14px;
+}
+
+.social-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 5px;
+    color: black;
+}
+
+.social-icon i{
+    padding: 0 15px;
+    font-size: 38px;
+    margin: 0 15px;
+    color: gray;
+}
+
+
+
+/* mobile device */
+
+
+@media only screen and (max-width:668px) {
+    
+    nav{
+        display: none;
+      }
+
+      .highlight{
+          display: none;
+      }
+
+      footer{
+          display: none;;
+      }
+       .banner{
+           width: 100%;
+       }
+      .players-gallery{
+          width: 100%;
+      }
+
+      .players{
+          grid-template-columns: repeat(1,1fr);
+      }
+}
